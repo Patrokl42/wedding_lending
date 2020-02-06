@@ -1,0 +1,81 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+*
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+%section
+	height: 100vh !important
+	position: relative
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+
+.col-1-2
+	width: 50%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: Helvetica, Verdana, sans-serif
+	overflow-x: hidden
+	color: $text
+	font-weight: 500
+
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		
+		&:focus:required:invalid
+			border-color: red
+
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	max-height: 100%
+	margin: auto
+
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+.img-slider
+	position: absolute
+	height: 100%
+
+.slider-item
+	&__image
+		height: 100vh
+		position: relative
+
+	&__text
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		font-size: 3.5rem
+		color: $accent
+		font-family: $pacifico
+		display: block
+		width: 100%
+		text-align: center
+
+
+@import "media"
+// Always at the end
