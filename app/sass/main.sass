@@ -14,13 +14,6 @@
 	background-color: $accent
 	color: #fff
 
-%section
-	height: 100vh !important
-	position: relative
-	background-repeat: no-repeat
-	background-size: cover
-	background-position: center center
-
 .col-1-2
 	width: 50%
 
@@ -29,7 +22,7 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.65
-	font-family: Helvetica, Verdana, sans-serif
+	font-family: $comfortaa
 	overflow-x: hidden
 	color: $text
 	font-weight: 500
@@ -57,17 +50,195 @@ body
 	text-align: center
 
 .slider-item
+	&__shadow
+		position: absolute
+		z-index: 0
+		background-color: rgba(117, 117, 117, 0.4)
+		height: 100%
+		width: 100%
+
+	&__image
+		transition: all .2s ease-in-out
 	&__text
 		position: absolute
-		top: 50%
-		transform: translateY(-50%)
-		font-size: 3.5rem
+		top: 45%
+		transform: translateY(-45%)
 		color: $accent
-		font-family: $pacifico
 		display: block
 		width: 100%
 		text-align: center
+		z-index: 1
 
+		&-title
+			font-size: 7.5rem
+			font-family: $lobster
 
+		&-subtitle
+			font-size: 2.5rem
+			display: block
+
+		&-date
+			padding-top: 25px
+			font-size: 16px
+
+.ivent-timer
+	display: flex
+	color: #fff
+
+.ivent-timer-text-wrapper
+	background-color: #585858
+	padding: 20px 15px
+	width: 35%
+
+.ivent-timer-text
+	display: flex
+	justify-content: flex-end
+	font-size: 20px
+
+	.timer-icon
+		margin-top: auto
+		margin-bottom: auto
+		font-size: 20px
+		padding-right: 20px
+
+	&__title
+		display: flex
+		flex-direction: column
+
+.ivent-timer-items-wrapper
+	display: flex
+	width: 65%
+	background-color: #9cc5be
+	.ivent-timer-item-inner:nth-child(1)
+		background-color: #759790
+	.ivent-timer-item-inner:nth-child(2)
+		background-color: #7b9f98
+	.ivent-timer-item-inner:nth-child(3)
+		background-color: #80a59e
+	.ivent-timer-item-inner:nth-child(4)
+		background-color: #89b0a9
+
+.ivent-timer-item-inner
+	width: 20%
+	display: flex
+	flex-direction: column
+	align-items: center
+	background-color: #759790
+
+.ivent-timer-item
+	margin: auto
+	font-size: 20px
+
+	&__count
+		display: block
+		text-align: center
+	&__title
+		display: block
+
+.story-wrapper
+	background-color: #fff
+	text-align: center
+	padding-top: 35px
+	padding-bottom: 25px
+
+.story-title
+	font-family: $lobster
+	font-size: 2.5rem
+	padding-bottom: 15px
+	color: #6c6975
+
+.story
+	max-width: 40%
+	margin: auto
+	background-color: #759790
+	border-radius: 5px
+	padding: 25px 5px
+
+.story-item
+	color: #fff
+
+	&__title
+		font-family: $lobster
+		font-size: 1.5rem
+		padding-bottom: 10px
+
+	&__text
+		font-size: 14px
+		padding: 0 25px
+
+	&__decoration
+		padding: 25px 0
+
+.decoration-line
+	background-color: #fff
+	height: 40px
+	width: 1px
+	display: block
+	margin: auto
+
+.about-wrapper
+	padding: 5rem 0
+	background-color: #fff
+	color: #6c6975
+
+.about
+	display: flex
+	max-width: 60%
+	margin: auto
+
+.about-description
+	width: 33.3333333333%
+	display: flex
+	flex-direction: column
+	justify-content: center
+	&__title
+		font-family: $lobster
+		font-size: 26px
+	&__text
+		font-size: 14px
+	&_men
+		text-align: right
+		padding-right: 10px
+	&_woomen
+		padding-left: 10px
+
+.about-image
+	width: 33.3333333333%
+	text-align: center
+	img
+		max-width: 300px
+		max-height: 400px
+
+.social-links
+	list-style-type: none
+	display: flex
+	padding-top: 15px
+	justify-content: flex-end
+	&_woomen
+		justify-content: flex-start
+	&__item-wrapper
+		margin-left: 15px
+	&__item
+		padding: 10px 13px
+		background-color: #9cc5be
+		border-radius: 50%
+		color: #fff
+
+.line
+	margin: auto
+	display: flex
+	flex-direction: column
+	text-align: center
+	padding: 25px 0
+	color: #fff
+	&__title
+		display: inline-block
+		padding-bottom: 10px
+		font-size: 18px
+		text-transform: uppercase
+
+	&__author
+		font-size: 18px
+		font-family: $lobster
 @import "media"
 // Always at the end

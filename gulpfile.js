@@ -58,6 +58,8 @@ gulp.task('pages', function buildHTML() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/js/superslides.js',
+		'app/js/wow.js',
+		'app/js/nanogallery2.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

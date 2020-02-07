@@ -6,23 +6,30 @@ html
         meta(name="keywords" content="scattered polaroids, image gallery, javascript, random rotation, 3d, backface, flat design")
         meta(name="description" content="")
         meta(name="viewport" content="width=device-width, initial-scale=1")
-        meta(name="theme-color" content="#6a1b9a")
-        meta(name="msapplication-navbutton-color" content="#6a1b9a")
-        meta(name="apple-mobile-web-app-status-bar-style" content="#6a1b9a")
+        meta(name="theme-color" content="#585858")
+        meta(name="msapplication-navbutton-color" content="#585858")
+        meta(name="apple-mobile-web-app-status-bar-style" content="#585858")
         meta(name="author" content="Golovetsky Petro")
         link(rel="stylesheet", href="css/main.min.css")
         style.
             body{
                 opacity: 1;
-                overflow: hidden;
+                overflow-x: hidden;
             }
             html{
-                background-color: #6a1b9a;
+                background-color: #585858;
             }
     body
         .page-wrapper
             header
                 include includes/slider
+            main
+                include includes/timer
+                include includes/about
+                include includes/line
+                include includes/story
+                include includes/gallery
+
 
 
         script(type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous")
