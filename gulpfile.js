@@ -33,7 +33,7 @@ gulp.task('styles', function() {
 	.pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
 	.pipe(rename({ suffix: '.min', prefix : '' }))
 	.pipe(autoprefixer(['last 15 versions']))
-	// .pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
+	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
 	.pipe(gulp.dest('dest/css'))
 	.pipe(browserSync.stream())
 });
@@ -59,11 +59,11 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'app/js/superslides.js',
 		'app/js/wow.js',
-		'app/js/nanogallery2.js',
+		'app/js/fancybox.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
-	// .pipe(uglify()) // Mifify js (opt.)
+	.pipe(uglify()) // Mifify js (opt.)
 	.pipe(gulp.dest('dest/js'))
 	.pipe(browserSync.reload({ stream: true }))
 });

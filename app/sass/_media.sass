@@ -1,31 +1,173 @@
 @import "vars"
 
+@media screen and (max-width: 1788px)
+  .gallery__item
+    width: 33.3333%
 
-// /*==========  Desktop First  ==========*/
+@media screen and (max-width: 1690px)
+  .about
+    width: 80%
+    &-image, &-description
+      width: 33.3333%
 
-// // ≥1200px
-// +media-breakpoint-down(lg)
+@media screen and (max-width: 1200px)
+  .story
+    max-width: 60%
 
-// // ≥992px
-// +media-breakpoint-down(md)
+@media screen and (max-width: 1342px)
+  .gallery__item
+    width: 50%
 
-// // ≥768px
-// +media-breakpoint-down(sm)
+  .about
+    width: 90%
 
-// // ≥576px
-// +media-breakpoint-down(xs)
+    &-image
+      width: 40%
 
+    &-description
+      width: 30%
 
-// /*==========  Mobile First  ==========*/
+  .contact-form
+    width: 70%
 
-// // ≤576px
-// +media-breakpoint-up(sm)
+@media screen and (max-width: 1060px)
+  .about
+    flex-wrap: wrap
+    max-width: 80%
 
-// // ≤768px
-// +media-breakpoint-up(md)
+    &-description_men
+      order: 1
+      padding-right: 1.5rem
 
-// // ≤992px
-// +media-breakpoint-up(lg)
+      .social-links
+        margin-right: 15px
 
-// // ≤1200px
-// +media-breakpoint-up(xl)
+    &-description_woomen
+      order: 2
+      padding-left: 1.5rem
+
+    &-description_men, &-description_woomen
+      width: 50%
+
+    &-image
+      width: 100%
+      order: 3
+      margin-top: 3rem
+
+    &-description__text
+      max-width: 100%
+
+@media screen and (max-width: 1024px)
+  .slider-item__text
+    &-title
+      font-size: 5.5rem
+
+    &-subtitle
+      font-size: 1.9rem
+
+    &-date
+      font-size: 1.2rem
+
+  .contact-wraper
+    flex-direction: column
+
+  .contact-form-wrapper
+    width: 100%
+    padding: 50px 0
+
+  .contact-map
+    width: 100%
+
+    iframe
+      min-height: 400px
+
+@media screen and (max-width: 896px)
+  .gallery__item
+    width: 100%
+
+@media screen and (max-width: 830px)
+  .ivent-timer
+    flex-direction: column
+
+    &-text
+      justify-content: center
+
+    &-text-wrapper
+      width: 100%
+
+    &-items-wrapper
+      width: 100%
+
+    &-item-inner
+      width: 25%
+      padding: 15px 0
+
+  .story
+    max-width: 80%
+
+@media screen and (max-width: 650px)
+  .slider-item__text
+    &-title
+      font-size: 4.7rem
+
+    &-subtitle
+      font-size: 1.5rem
+
+    &-date
+      font-size: 1rem
+
+  .about
+    max-width: 100%
+
+    &-description_men, &-description_woomen
+      width: 100%
+
+  .line
+    padding: 15px 0
+
+    &__title
+      font-size: 22px
+
+    &__author
+      font-size: 25px
+
+@media screen and (max-width: 540px)
+  .slider-item__text
+    &-title
+      font-size: 3.7rem
+
+    &-subtitle
+      font-size: 1.2rem
+
+    &-date
+      font-size: 1rem
+
+  .line
+    padding: 10px 0
+
+    &__title
+      font-size: 18px
+
+    &__author
+      font-size: 22px
+
+  .story
+    max-width: 90%
+
+    &-item__text
+      font-size: 14px
+
+  .gallery__item img
+    max-width: 400px
+    max-height: 400px
+    height: 100%
+    width: 100%
+
+  .contact-form
+    width: 90%
+
+  .about-wrapper
+    padding: 2rem 0
+
+  .about-description_woomen
+    padding-top: 2rem

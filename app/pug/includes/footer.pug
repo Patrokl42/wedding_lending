@@ -1,0 +1,23 @@
+.contact-wraper
+    .contact-form-wrapper
+        form.contact-form
+            .contact-form__item.contact-form-title
+                h5='Підтвердження'
+            .contact-form__item
+                input(type='text' name='name' id='name' placeholder='Імя' required)
+            .contact-form__item
+                input(type='email' name='email' id='email' placeholder='Емайл' required)
+            .contact-form__item
+                select(name='attending' id='attending' required)
+                    option(value='Yes' selected )
+                        | Так, я буду
+                    option(value='No')
+                        | Ні, я не буду
+            .contact-form__item
+                textarea(name='attending' id='message' placeholder='Повідомлення')
+            .contact-form__item
+                button(type='submit')
+                    | Відправити
+        .form-shadow.parallax-shadow
+    .contact-map
+        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1310.8266422134643!2d24.709063258304933!3d48.92199765726584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c16b55347125%3A0x28853e91ed25fcf8!2z0KDQldCb0IbQk9CG0JnQndCQINCa0J3QmNCT0JAsINCa0KDQkNCc0J3QmNCm0K8!5e0!3m2!1suk!2sua!4v1581324766163!5m2!1suk!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="")
